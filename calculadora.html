@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora 2.0</title>
+    <h1>Calculadora Select</h1>
+    <meta name="viewport">
+
+</head>
+
+<body>
+    <form name="calculadora">
+        <input type="text" name="display">
+        <br>
+        <input type="button" value="9" onclick="obtener(9);">
+        <input type="button" value="8" onclick="obtener(8);">
+        <input type="button" value="7" onclick="obtener(7);">
+        <br>
+        <input type="button" value="6" onclick="obtener(6);">
+        <input type="button" value="5" onclick="obtener(5);">
+        <input type="button" value="4" onclick="obtener(4);">
+        <br>
+        <input type="button" value="3" onclick="obtener(3);">
+        <input type="button" value="2" onclick="obtener(2);">
+        <input type="button" value="1" onclick="obtener(1);">
+        <br>
+        <input type="button" value="." name="punto" onclick="validarPunto();">
+        <input type="button" value="0" onclick="validarCero()">
+        <input type="button" onclick="document.calculadora.reset()" value="C">
+        <br>
+        <input type="button" value="=" onclick="operacion(); true;">
+        <select name="operador" onchange="borrar(this.value);">
+                        <option value="0">Op</option>
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="/">/</option>
+                        <option value="*">*</option>
+                    </select>
+        
+    </form>
+</body>
+
+</html>
