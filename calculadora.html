@@ -60,6 +60,41 @@
                             }
                         }
             
+                        function operacion() {
+                            if (document.calculadora.operador.value == '+') {
+                                digito2 = document.calculadora.display.value;
+                                var num1 = parseFloat(digito1),
+                                    num2 = parseFloat(digito2);
+                                var resultado = (num1 + num2);
+                                document.calculadora.display.value = resultado;
+                                document.calculadora.operador.value = "0";
+            
+                            } else if (document.calculadora.operador.value == '-') {
+                                digito2 = document.calculadora.display.value;
+                                var num1 = parseFloat(digito1),
+                                    num2 = parseFloat(digito2);
+                                var resultado = (num1 - num2);
+                                document.calculadora.display.value = resultado;
+                                document.calculadora.operador.value = "0";
+            
+                            } else if (document.calculadora.operador.value == '/') {
+                                digito2 = document.calculadora.display.value;
+                                var num1 = parseFloat(digito1),
+                                    num2 = parseFloat(digito2);
+                                var resultado = (num1 / num2);
+                                document.calculadora.display.value = resultado;
+            
+                            } else if (document.calculadora.operador.value == '*') {
+                                digito2 = document.calculadora.display.value;
+                                document.calculadora.operador.value = "0";
+                                var num1 = parseFloat(digito1),
+                                    num2 = parseFloat(digito2);
+                                var resultado = (num1 * num2);
+                                document.calculadora.display.value = resultado;
+                                document.calculadora.operador.value = "0";
+                            }
+                        }
+            
                         
                     </script>
     </form>
