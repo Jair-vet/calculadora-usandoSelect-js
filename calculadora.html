@@ -95,7 +95,25 @@
                             }
                         }
             
-                        
+                        function validarPunto() {
+                            var aux = document.calculadora.display.value;
+                            if (aux == 0) {
+                                document.calculadora.display.value = "0.";
+                            } else if (aux.indexOf('.') == -1) {
+                                document.calculadora.display.value += ".";
+                            }
+                        }
+            
+                        function validarCero() {
+                            var aux = document.calculadora.display.value;
+                            if (aux == 0) {
+                                document.calculadora.display.value = "0.";
+                            } else if (aux.indexOf('0') != -1) {
+                                document.calculadora.display.value += "0";
+                            } else if (aux.indexOf('0')) {
+                                document.calculadora.display.value += "0";
+                            }
+                        }
                     </script>
     </form>
 </body>
