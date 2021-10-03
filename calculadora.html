@@ -44,7 +44,23 @@
                             document.calculadora.display.value += num;
                         }
             
-                       
+                        function borrar(valor) {
+                            if (valor == '+') {
+                                digito1 = document.calculadora.display.value;
+                                document.calculadora.display.value = "";
+                            } else if (valor == '-') {
+                                digito1 = document.calculadora.display.value;
+                                document.calculadora.display.value = "";
+                            } else if (valor == '/') {
+                                digito1 = document.calculadora.display.value;
+                                document.calculadora.display.value = "";
+                            } else if (valor == '*') {
+                                digito1 = document.calculadora.display.value;
+                                document.calculadora.display.value = "";
+                            }
+                        }
+            
+                        
                     </script>
     </form>
 </body>
